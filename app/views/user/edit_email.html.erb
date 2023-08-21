@@ -1,0 +1,10 @@
+<%= form_with model: @user, url: user_update_email_path, method: 'put'  do |form| %>
+  <div>
+    <%= form.label :email %><br />
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.submit "Change email" %>
+  </div>
+<% end %>
